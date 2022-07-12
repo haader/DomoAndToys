@@ -1,12 +1,12 @@
 <link rel="stylesheet" href="./estilos/seccionGeneral.css">                         
-<!--------------------------------------------------------IMAGEN 1 ----------------------------------------------------------------->
+<!----------COCINA 1 ----------------------------------------------------------------->
 <div class="row" >
         
     <div class="all">
             
                 
                     <figure id="imgVer">
-                        <img class="cardimg1" src="./IMAGENES/casitas/casitas (0).jpeg"
+                        <img class="cardimg1" src="./IMAGENES/juguetes/cocinas/cosina (0).jpeg"
                         alt="" >
                         
                     </figure>
@@ -16,10 +16,10 @@
 
                 <div class="text">
                     <text>
-                        Casita de muñecas en madera completa con 15 muebles artesanales  pintada y personalizada en acrílico  con nombre ..y un acabado a la laca 
+                        Cocinita de juguete Artesanal en  madera ..personalizadas pintada con acrílico con 3 cubiertos....
                     </text>
                     <text>
-                        Precio: 8.000 $
+                        Precio: $ 4.000
                     </text>
 
                     <button class="btnComprar">Comprar</button>
@@ -31,20 +31,235 @@
 
 
 
-    <div class="carrucel" id="carrucel">
+    <div class="carrucel" id="carrucel1">
 
 
     </div>
 </div>
 
 
+<!---------CAMION 2 ----------------------------------------------------------------->
+<div class="row" >
+        
+    <div class="all">
+            
+                
+                    <figure id="imgVer">
+                        <img class="cardimg1" src="./IMAGENES/juguetes/camion (0).jpeg"
+                        alt="" >
+                        
+                    </figure>
+                
+                
+
+
+                <div class="text">
+                    <text>
+                        Camioncito artesanal de madera pintado y personalizado  en acrílico en varios colores 
+                    </text>
+                    <text>
+                        Precio: 2000$
+                    </text>
+
+                    <button class="btnComprar">Comprar</button>
+        
+                </div>
+
+
+    </div>
+
+
+
+    <div class="carrucel" id="carrucel2">
+
+
+    </div>
+</div>
+
+<!--------------AUTOS 3 ----------------------------------------------------------------->
+<div class="row" >
+        
+    <div class="all">
+            
+                
+                    <figure id="imgVer">
+                        <img class="cardimg1" src="./IMAGENES/juguetes/autos.jpeg"
+                        alt="" >
+                        
+                    </figure>
+                
+                
+
+
+                <div class="text">
+                    <text>
+                        Autitos artesanales de madera pintados en vivos colores ....
+                    </text>
+                    <text>
+                        Precio: promo 3 x $ 1000.
+                    </text>
+
+                    <button class="btnComprar">Comprar</button>
+        
+                </div>
+
+
+    </div>
+
+
+
+    <div class="carrucel" id="carrucel3">
+
+
+    </div>
+</div>
+
+<!-------------CUNA 4 ----------------------------------------------------------------->
+<div class="row" >
+        
+    <div class="all">
+            
+                
+                    <figure id="imgVer">
+                        <img class="cardimg1" src="./IMAGENES/juguetes/cuna (0).jpeg"
+                        alt="" >
+                        
+                    </figure>
+                
+                
+
+
+                <div class="text">
+                    <text>
+                        Cunita de juguete para bebote  artesanal de madera pintada y personalizada 
+                    </text>
+                    <text>
+                        Precio: $3000
+                    </text>
+
+                    <button class="btnComprar">Comprar</button>
+        
+                </div>
+
+
+    </div>
+
+
+
+    <div class="carrucel" id="carrucel4">
+
+
+    </div>
+</div>
+
+<!-------------CABALLO 5 ----------------------------------------------------------------->
+<div class="row" >
+        
+    <div class="all">
+            
+                
+                    <figure id="imgVer">
+                        <img class="cardimg1" src="./IMAGENES/juguetes/caballo (0).jpeg"
+                        alt="" >
+                        
+                    </figure>
+                
+                
+
+
+                <div class="text">
+                    <text>
+                        Caballito mecedor de madera personalizados y pintado con base acrílica en bellos colores
+                    </text>
+                    <text>
+                        Precio:  $ 7000
+                    </text>
+
+                    <button class="btnComprar">Comprar</button>
+        
+                </div>
+
+
+    </div>
+
+
+
+    <div class="carrucel" id="carrucel5">
+
+
+    </div>
+</div>
+
+<!-------------MARTILLO THOR 6 ----------------------------------------------------------------->
+<div class="row" >
+        
+    <div class="all">
+            
+                
+                    <figure id="imgVer">
+                        <img class="cardimg1" src="./IMAGENES/juguetes/martillo (0).jpeg"
+                        alt="" >
+                        
+                    </figure>
+                
+                
+
+
+                <div class="text">
+                    <text>
+                       Martillo de madera Thor 
+                    </text>
+                    <text>
+                        Precio: $???
+                    </text>
+
+                    <button class="btnComprar">Comprar</button>
+        
+                </div>
+
+
+    </div>
+
+
+
+    <div class="carrucel" id="carrucel6">
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <script src="./logica/logicaCarrucel.js"></script>
 <script>
-for (let index = 0; index < 35; index++) {
 
-document.getElementById("carrucel").innerHTML+='<img class="imagenes" src="./IMAGENES/casitas/casitas ('+index+').jpeg" onclick="selectCasitas('+index+')" >';
+//COCINAS
+for (let index = 0; index < 7; index++) {
+
+document.getElementById("carrucel").innerHTML+='<img class="imagenes" src="./IMAGENES/juguetes/cocinas/cosina ('+index+').jpeg" onclick="selectCosinas('+index+')" >';
 
 }
+//COCINAS
+for (let index = 0; index < 7; index++) {
+
+document.getElementById("carrucel").innerHTML+='<img class="imagenes" src="./IMAGENES/juguetes/cocinas/cosina ('+index+').jpeg" onclick="selectCosinas('+index+')" >';
+
+}S
 
 
 </script>
