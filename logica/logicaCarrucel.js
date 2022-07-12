@@ -23,3 +23,6 @@ function selectCarteles(img){
     document.getElementById("imgVer").innerHTML='<img class="cardimg1" src="./IMAGENES/carteles/cartel ('+img+').jpeg" alt="" >';
     
 };
+
+
+

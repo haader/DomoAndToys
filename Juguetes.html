@@ -5,7 +5,7 @@
     <div class="all">
             
                 
-                    <figure id="imgVer">
+                    <figure id="imgVer1">
                         <img class="cardimg1" src="./IMAGENES/juguetes/cocinas/cosina (0).jpeg"
                         alt="" >
                         
@@ -44,7 +44,7 @@
     <div class="all">
             
                 
-                    <figure id="imgVer">
+                    <figure id="imgVer2">
                         <img class="cardimg1" src="./IMAGENES/juguetes/camion (0).jpeg"
                         alt="" >
                         
@@ -82,8 +82,8 @@
     <div class="all">
             
                 
-                    <figure id="imgVer">
-                        <img class="cardimg1" src="./IMAGENES/juguetes/autos.jpeg"
+                    <figure id="imgVer3">
+                        <img class="cardimg1" src="./IMAGENES/juguetes/auto (0).jpeg"
                         alt="" >
                         
                     </figure>
@@ -120,7 +120,7 @@
     <div class="all">
             
                 
-                    <figure id="imgVer">
+                    <figure id="imgVer4">
                         <img class="cardimg1" src="./IMAGENES/juguetes/cuna (0).jpeg"
                         alt="" >
                         
@@ -158,7 +158,7 @@
     <div class="all">
             
                 
-                    <figure id="imgVer">
+                    <figure id="imgVer5">
                         <img class="cardimg1" src="./IMAGENES/juguetes/caballo (0).jpeg"
                         alt="" >
                         
@@ -196,7 +196,7 @@
     <div class="all">
             
                 
-                    <figure id="imgVer">
+                    <figure id="imgVer6">
                         <img class="cardimg1" src="./IMAGENES/juguetes/martillo (0).jpeg"
                         alt="" >
                         
@@ -245,21 +245,91 @@
 
 
 
-<script src="./logica/logicaCarrucel.js"></script>
+
 <script>
 
 //COCINAS
 for (let index = 0; index < 7; index++) {
 
-document.getElementById("carrucel").innerHTML+='<img class="imagenes" src="./IMAGENES/juguetes/cocinas/cosina ('+index+').jpeg" onclick="selectCosinas('+index+')" >';
+document.getElementById("carrucel1").innerHTML+='<img class="imagenes" src="./IMAGENES/juguetes/cocinas/cosina ('+index+').jpeg" onclick="selectCosinas('+index+')" >';
 
 }
-//COCINAS
-for (let index = 0; index < 7; index++) {
 
-document.getElementById("carrucel").innerHTML+='<img class="imagenes" src="./IMAGENES/juguetes/cocinas/cosina ('+index+').jpeg" onclick="selectCosinas('+index+')" >';
+                    //seccion JUGUETES
+                    function selectCosinas(img){
+                    
+                    document.getElementById("imgVer1").innerHTML='<img class="cardimg1" src="./IMAGENES/juguetes/cocinas/cosina ('+img+').jpeg" alt="" >';
+                    
+                    };
 
-}S
+
+
+
+//CAMION
+for (let index = 0; index < 3; index++) {
+
+document.getElementById("carrucel2").innerHTML+='<img class="imagenes" src="./IMAGENES/juguetes/camion ('+index+').jpeg" onclick="selectCamiones('+index+')" >';
+
+}
+                    function selectCamiones(img){
+
+                    document.getElementById("imgVer2").innerHTML='<img class="cardimg1" src="./IMAGENES/juguetes/camion ('+img+').jpeg" alt="" >';
+
+                    };
+//AUTO
+for (let index = 0; index < 2; index++) {
+
+document.getElementById("carrucel3").innerHTML+='<img class="imagenes" src="./IMAGENES/juguetes/auto ('+index+').jpeg" onclick="selectAutos('+index+')" >';
+
+}
+
+                    function selectAutos(img){
+
+                    document.getElementById("imgVer3").innerHTML='<img class="cardimg1" src="./IMAGENES/juguetes/auto ('+img+').jpeg" alt="" >';
+
+                    };
+//CUNA
+for (let index = 0; index < 4; index++) {
+
+document.getElementById("carrucel4").innerHTML+='<img class="imagenes" src="./IMAGENES/juguetes/cuna ('+index+').jpeg" onclick="selectCunas('+index+')" >';
+
+}
+
+                    function selectCunas(img){
+
+                    document.getElementById("imgVer4").innerHTML='<img class="cardimg1" src="./IMAGENES/juguetes/cuna ('+img+').jpeg" alt="" >';
+
+                    };
+
+
+
+//CABALLO
+for (let index = 0; index < 2; index++) {
+
+document.getElementById("carrucel5").innerHTML+='<img class="imagenes" src="./IMAGENES/juguetes/caballo ('+index+').jpeg" onclick="selectCaballos('+index+')" >';
+
+}
+
+
+                    function selectCaballos(img){
+
+                    document.getElementById("imgVer5").innerHTML='<img class="cardimg1" src="./IMAGENES/juguetes/caballo ('+img+').jpeg" alt="" >';
+
+                    };
+
+
+//MARTILLO
+for (let index = 0; index < 3; index++) {
+
+document.getElementById("carrucel6").innerHTML+='<img class="imagenes" src="./IMAGENES/juguetes/martillo ('+index+').jpeg" onclick="selectMartillos('+index+')" >';
+
+}
+
+                    function selectMartillos(img){
+
+                    document.getElementById("imgVer6").innerHTML='<img class="cardimg1" src="./IMAGENES/juguetes/martillo ('+img+').jpeg" alt="" >';
+
+                    };
 
 
 </script>

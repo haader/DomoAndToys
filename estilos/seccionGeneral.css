@@ -64,9 +64,10 @@ img{
     gap: 1rem;
     overflow-x: scroll;
     align-items: center;
+    justify-content: center;
    
 
-    width: 95%;
+    width: auto;
     height: 7rem;
 
 }
