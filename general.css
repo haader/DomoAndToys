@@ -1,7 +1,110 @@
+@media screen and (min-width:500px)  {
+
+
+    :root{
+        --x:10rem;
+        --y:10rem;
+    }
+
+
+    .row{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3rem;
+        justify-content: center;
+        align-items: flex-end
+    }
+    .row
+    .divcard1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width:var(--x);
+    margin: 0;
+    margin-top: 1rem;
+
+
+    }
+    .row
+    .divcard1
+    figure{
+        border: 0.5px solid black;
+        display: flex;
+        height: var(--y);
+        width: var(--x);
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: -20px 30px 20px rgb(20 14 5 / 50%);
+    }
+    .row
+    .divcard1
+    figure
+    img{
+        height: var(--y);
+        width: var(--x);
+        position: relative;
+
+    }
+    .row
+    .divcard1
+    p{
+        width: 175%;
+        font-size: 1rem;
+        padding: 0;
+        font-weight: 900;
+        
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .row
+    .divcard1
+    a{
+        width: var(--x);
+        height: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
 
 
 
-@media screen and (max-width:400) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:500px) {
     
 
         :root{

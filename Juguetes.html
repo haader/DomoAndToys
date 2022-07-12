@@ -1,232 +1,52 @@
-
-        <!--------------------------------------------------------IMAGEN 1 ----------------------------------------------------------------->
+<link rel="stylesheet" href="./estilos/seccionGeneral.css">                         
+<!--------------------------------------------------------IMAGEN 1 ----------------------------------------------------------------->
 <div class="row" >
+        
+    <div class="all">
             
-<div class="all1">
+                
+                    <figure id="imgVer">
+                        <img class="cardimg1" src="./IMAGENES/casitas/casitas (0).jpeg"
+                        alt="" >
+                        
+                    </figure>
+                
+                
+
+
+                <div class="text">
+                    <text>
+                        Casita de muñecas en madera completa con 15 muebles artesanales  pintada y personalizada en acrílico  con nombre ..y un acabado a la laca 
+                    </text>
+                    <text>
+                        Precio: 8.000 $
+                    </text>
+
+                    <button class="btnComprar">Comprar</button>
         
-<div class="divcard1">
-    <figure >
-        <img class="cardimg1" id="imgdiv2" src="./IMAGENES/cocina/cosina (1).jpeg"
-        alt="" >
-        
-    </figure>
-        <p class="card-text ">Hecho en madera barnizada con calle y altura</p>
-        <h4 class="card-text">400$</h4>
-        <div class="d-grid col-11 ">
-            <button class="btn btn-primary bg-gradient" type="button">Comprar</button>
-        </div>
-
-</div>
-
-<!--------------------------------------------------------IMAGEN 2 ----------------------------------------------------------------->
+                </div>
 
 
-<div class="divcard2">
-
-    <figure >
-    <img class="cardimg2" id="imgdiv3" src="./IMAGENES/cocina/cosina (2).jpeg"
-    alt="" >
-    
-    
-    </figure>
-    <p class="card-text ">Hecho en madera barnizada con calle y altura</p>
-        <h4 class="card-text">400$</h4>
-        <div class="d-grid col-11 ">
-            <button class="btn btn-primary bg-gradient" type="button">Comprar</button>
-        </div>
-</div>
-
-<!--------------------------------------------------------IMAGEN 3 ----------------------------------------------------------------->
-
-
-<div class="divcard3">
-
-    <figure >
-        <img class="cardimg3" id="imgdiv4" src="./IMAGENES/cocina/cosina (3).jpeg"
-         alt="" >
-    
-    
-    </figure>
-        <p class="card-text ">Hecho en madera barnizada con calle y altura</p>
-        <h4 class="card-text">400$</h4>
-        <div class="d-grid col-11 ">
-            <button class="btn btn-primary bg-gradient" type="button">Comprar</button>
-        </div>
-</div>      
-</div>
-</div>
-<!------------------------------IMAGEN 4---------------------------------------------->
-<div class="row" >
-        
-<div class="all1">
-
-<div class="divcard1">
-    <figure >
-        <img class="cardimg1" id="imgdiv2" src="./IMAGENES/cocina/cosina (4).jpeg"
-            alt="" >
-
-    </figure>
-        <p class="card-text ">Hecho en madera barnizada con calle y altura</p>
-        <h4 class="card-text">400$</h4>
-        <div class="d-grid col-11 ">
-    <button class="btn btn-primary bg-gradient" type="button">Comprar</button>
     </div>
 
-</div>
-
-<!--------------------------------------------------------IMAGEN 5 ----------------------------------------------------------------->
 
 
-<div class="divcard2">
-
-    <figure >
-        <img class="cardimg2" id="imgdiv3" src="./IMAGENES/cocina/cosina (5).jpeg"
-        alt="" >
+    <div class="carrucel" id="carrucel">
 
 
-     </figure>
-    <p class="card-text ">Hecho en madera barnizada con calle y altura</p>
-    <h4 class="card-text">400$</h4>
-    <div class="d-grid col-11 ">
-    <button class="btn btn-primary bg-gradient" type="button">Comprar</button>
-     </div>
-</div>
-
-<!--------------------------------------------------------IMAGEN 6 ----------------------------------------------------------------->
-
-
-<div class="divcard3">
-
-     <figure >
-         <img class="cardimg3" id="imgdiv4" src="./IMAGENES/cocina/cosina (6).jpeg"
-          alt="" >
-
-
-    </figure>
-    <p class="card-text ">Hecho en madera barnizada con calle y altura</p>
-        <h4 class="card-text">400$</h4>
-    <div class="d-grid col-11 ">
-        <button class="btn btn-primary bg-gradient" type="button">Comprar</button>
-</div>
-</div>
-</div>
-
-<!------------------------------IMAGEN 7fila---------------------------------------------->
-
-<div class="row" >
-
-<div class="all1">
-
-<div class="divcard1">
-    <figure >
-        <img class="cardimg1" id="imgdiv2" src="./IMAGENES/cocina/cosina (7).jpeg"
-        alt="" >
-        
-    </figure>
-    <p class="card-text ">Hecho en madera barnizada con calle y altura</p>
-    <h4 class="card-text">400$</h4>
-    <div class="d-grid col-11 ">
-        <button class="btn btn-primary bg-gradient" type="button">Comprar</button>
-    </div>
-
-</div>
-
-<!--------------------------------------------------------IMAGEN 8 ----------------------------------------------------------------->
-
-
-<div class="divcard2">
-
-    <figure >
-        <img class="cardimg2" id="imgdiv3" src="./IMAGENES/juguetes/juguete (1).jpeg"
-        alt="" >
-        
-        
-    </figure>
-    <p class="card-text ">Hecho en madera barnizada con calle y altura</p>
-    <h4 class="card-text">400$</h4>
-    <div class="d-grid col-11 ">
-        <button class="btn btn-primary bg-gradient" type="button">Comprar</button>
     </div>
 </div>
 
-<!--------------------------------------------------------IMAGEN 9 ----------------------------------------------------------------->
+
+<script src="./logica/logicaCarrucel.js"></script>
+<script>
+for (let index = 0; index < 35; index++) {
+
+document.getElementById("carrucel").innerHTML+='<img class="imagenes" src="./IMAGENES/casitas/casitas ('+index+').jpeg" onclick="selectCasitas('+index+')" >';
+
+}
 
 
-<div class="divcard3">
+</script>
 
-    <figure >
-        <img class="cardimg3" id="imgdiv4" src="./IMAGENES/juguetes/juguete (2).jpeg"
-                 alt="" >
-        
-        
-    </figure>
-            <p class="card-text ">Hecho en madera barnizada con calle y altura</p>
-            <h4 class="card-text">400$</h4>
-            <div class="d-grid col-11 ">
-                <button class="btn btn-primary bg-gradient" type="button">Comprar</button>
-            </div>
- </div>
-             
-</div>
-
-</div>
-
-
-    <!------------------------------IMAGEN 10fila---------------------------------------------->
-<div class="row" >
-
-<div class="all1">
-
-<div class="divcard1">
-    <figure >
-        <img class="cardimg1" id="imgdiv2" src="./IMAGENES/juguetes/juguete (3).jpeg"
-        alt="" >
-        
-    </figure>
-    <p class="card-text ">Hecho en madera barnizada con calle y altura</p>
-    <h4 class="card-text">400$</h4>
-    <div class="d-grid col-11 ">
-        <button class="btn btn-primary bg-gradient" type="button">Comprar</button>
-    </div>
-
-</div>
-
-<!--------------------------------------------------------IMAGEN 11 ----------------------------------------------------------------->
-
-
-<div class="divcard2">
-
-    <figure >
-        <img class="cardimg2" id="imgdiv3" src="./IMAGENES/juguetes/juguete (4).jpeg"
-        alt="" >
-        
-        
-    </figure>
-    <p class="card-text ">Hecho en madera barnizada con calle y altura</p>
-    <h4 class="card-text">400$</h4>
-    <div class="d-grid col-11 ">
-        <button class="btn btn-primary bg-gradient" type="button">Comprar</button>
-    </div>
-</div>
-
-<!--------------------------------------------------------IMAGEN 12 ----------------------------------------------------------------->
-
-
-<div class="divcard3">
-
-    <figure >
-        <img class="cardimg3" id="imgdiv4" src="./IMAGENES/juguetes/juguete (5).jpeg"
-            alt="" >
-    
-    
-    </figure>
-
-        <p class="card-text ">Hecho en madera barnizada con calle y altura</p>
-        <h4 class="card-text">400$</h4>
-        <div class="d-grid col-11 ">
-            <button class="btn btn-primary bg-gradient" type="button">Comprar</button>
-        </div>
-</div>
-</div>
-
-</div>
+<!--------------------------------------------------------IMAGEN 1 ----------------------------------------------------------------->
