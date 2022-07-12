@@ -10,7 +10,7 @@
     flex-wrap: wrap;
     gap: 3rem;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end
 }
 .row
 .divcard1{
@@ -53,7 +53,10 @@ img{
 .row
 .divcard1
 p{
-    width: 100%;
+    width: 175%;
+    font-size: 10px;
+    padding: 0;
+    font-weight: 900;
     
     position: relative;
     justify-content: center;
