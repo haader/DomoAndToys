@@ -4,12 +4,21 @@
     <h3 class="title" >Pistas de Autos</h3>
         <div class="all">
                 
-                    
+                  <div class="containerFigure">
+
+                        <div class="btnImg" id="btnPrev" onclick="btnPrev()">
+                            <
+                        </div>
                         <figure id="imgVer">
                             <img class="cardimg1" src="./IMAGENES/pistas/pista (1).jpeg"
                             alt="" >
                             
                         </figure>
+                        <div class="btnImg" id="btnNext" onclick="btnNext()">
+                            >
+                        </div>
+        
+                    </div>
                        
                     
 
@@ -42,11 +51,59 @@
 
 <script src="./logica/logicaCarrucel.js"></script>
 <script>
-    for (let index = 0; index < 25; index++) {
+   let max=25;
 
-        document.getElementById("carrucel").innerHTML+='<img class="imagenes" src="./IMAGENES/pistas/pista ('+index+').jpeg" onclick="select('+index+')" >';
+    for (let index = 0; index < max; index++) {
+
+        document.getElementById("carrucel").innerHTML+='<img class="imagenes" id="img'+index+'" src="./IMAGENES/pistas/pista ('+index+').jpeg" onclick="selectPistas('+index+')" >';
         console.log("pintando: "+index);
     }
+
+
+    
+//BTNIMG casitas!!
+let indext=0;
+
+
+function btnPrev(){
+    if(indext>0){
+        document.getElementById("img"+indext).style.transform = '';
+        indext--;
+        document.getElementById("imgVer").innerHTML='<img class="cardimg1" src="./IMAGENES/pistas/pista ('+indext+').jpeg" alt="" >';
+        document.getElementById("img"+indext).style.transform = "translate(0,-10px)"
+    }else{
+        
+    }
+    return indext;
+    
+}
+
+                    function btnNext(){
+                        document.getElementById("img"+indext).style.transform = '';
+                        indext++;
+                        if(indext<max){
+                            
+                            document.getElementById("imgVer").innerHTML='<img class="cardimg1" src="./IMAGENES/pistas/pista ('+indext+').jpeg" alt="" >';
+                            document.getElementById("img"+indext).style.transform = "translate(0,-10px)"
+
+                        }else{
+                            
+                            indext--;
+                            document.getElementById("img"+indext).style.transform = "translate(0,-10px)"
+                        }
+                        return indext;
+                    }
+
+function selectPistas(img){
+  
+  document.getElementById("img"+indext).style.transform = '';
+
+  document.getElementById("imgVer").innerHTML='<img class="cardimg1" src="./IMAGENES/pistas/pista ('+img+').jpeg" alt="" >';
+  indext=img;
+  document.getElementById("img"+indext).style.transform = "translate(0,-10px)"
+  return(indext);
+};
+
         
     
 </script>

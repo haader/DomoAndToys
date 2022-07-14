@@ -4,13 +4,24 @@
 <div class="row" >
 <h3 class="title" >Cosinas</h3>        
     <div class="all">
-            
+
+                    <div class="containerFigure">
+
+                        <div class="btnImg" id="btnPrev" onclick="btnPrev1()">
+                            <
+                        </div>
+                        <figure id="imgVer1">
+                            <img class="cardimg1" src="./IMAGENES/juguetes/cocinas/cosina (0).jpeg"
+                            alt="" >
+                            
+                        </figure>
+                        <div class="btnImg" id="btnNext" onclick="btnNext1()">
+                            >
+                        </div>
+
+                    </div>
                 
-                    <figure id="imgVer1">
-                        <img class="cardimg1" src="./IMAGENES/juguetes/cocinas/cosina (0).jpeg"
-                        alt="" >
-                        
-                    </figure>
+                   
                 
                 
 
@@ -46,11 +57,22 @@
     <div class="all">
             
                 
-                    <figure id="imgVer2">
-                        <img class="cardimg1" src="./IMAGENES/juguetes/camion (0).jpeg"
+                   
+                    <div class="containerFigure">
+
+                        <div class="btnImg" id="btnPrev" onclick="btnPrev2()">
+                            <
+                        </div>
+                        <figure id="imgVer2">
+                            <img class="cardimg1" src="./IMAGENES/juguetes/camion (0).jpeg"
                         alt="" >
-                        
-                    </figure>
+                            
+                        </figure>
+                        <div class="btnImg" id="btnNext" onclick="btnNext2()">
+                            >
+                        </div>
+
+                    </div>
                 
                 
 
@@ -84,11 +106,21 @@
     <div class="all">
             
                 
-                    <figure id="imgVer3">
-                        <img class="cardimg1" src="./IMAGENES/juguetes/auto (0).jpeg"
-                        alt="" >
-                        
-                    </figure>
+        <div class="containerFigure">
+
+            <div class="btnImg" id="btnPrev" onclick="btnPrev3()">
+                <
+            </div>
+            <figure id="imgVer3">
+                <img class="cardimg1" src="./IMAGENES/juguetes/auto (0).jpeg"
+            alt="" >
+                
+            </figure>
+            <div class="btnImg" id="btnNext" onclick="btnNext3()">
+                >
+            </div>
+
+        </div>
                 
                 
 
@@ -122,11 +154,21 @@
     <div class="all">
             
                 
-                    <figure id="imgVer4">
-                        <img class="cardimg1" src="./IMAGENES/juguetes/cuna (0).jpeg"
-                        alt="" >
-                        
-                    </figure>
+        <div class="containerFigure">
+
+            <div class="btnImg" id="btnPrev" onclick="btnPrev4()">
+                <
+            </div>
+            <figure id="imgVer4">
+                <img class="cardimg1" src="./IMAGENES/juguetes/cuna (0).jpeg"
+            alt="" >
+                
+            </figure>
+            <div class="btnImg" id="btnNext" onclick="btnNext4()">
+                >
+            </div>
+
+        </div>
                 
                 
 
@@ -160,11 +202,21 @@
     <div class="all">
             
                 
-                    <figure id="imgVer5">
-                        <img class="cardimg1" src="./IMAGENES/juguetes/caballo (0).jpeg"
-                        alt="" >
-                        
-                    </figure>
+        <div class="containerFigure">
+
+            <div class="btnImg" id="btnPrev" onclick="btnPrev5()">
+                <
+            </div>
+            <figure id="imgVer5">
+                <img class="cardimg1" src="./IMAGENES/juguetes/caballo (0).jpeg"
+            alt="" >
+                
+            </figure>
+            <div class="btnImg" id="btnNext" onclick="btnNext5()">
+                >
+            </div>
+
+        </div>
                 
                 
 
@@ -198,11 +250,21 @@
     <div class="all">
             
                 
-                    <figure id="imgVer6">
-                        <img class="cardimg1" src="./IMAGENES/juguetes/martillo (0).jpeg"
-                        alt="" >
-                        
-                    </figure>
+        <div class="containerFigure">
+
+            <div class="btnImg" id="btnPrev" onclick="btnPrev6()">
+                <
+            </div>
+            <figure id="imgVer6">
+                <img class="cardimg1" src="./IMAGENES/juguetes/martillo (0).jpeg"
+            alt="" >
+                
+            </figure>
+            <div class="btnImg" id="btnNext" onclick="btnNext6()">
+                >
+            </div>
+
+        </div>
                 
                 
 
@@ -247,91 +309,8 @@
 
 
 
-
+<script src="../logica/carrucelJuguetes.js"></script>
 <script>
-
-//COCINAS
-for (let index = 0; index < 7; index++) {
-
-document.getElementById("carrucel1").innerHTML+='<img class="imagenes" src="./IMAGENES/juguetes/cocinas/cosina ('+index+').jpeg" onclick="selectCosinas('+index+')" >';
-
-}
-
-                    //seccion JUGUETES
-                    function selectCosinas(img){
-                    
-                    document.getElementById("imgVer1").innerHTML='<img class="cardimg1" src="./IMAGENES/juguetes/cocinas/cosina ('+img+').jpeg" alt="" >';
-                    
-                    };
-
-
-
-
-//CAMION
-for (let index = 0; index < 3; index++) {
-
-document.getElementById("carrucel2").innerHTML+='<img class="imagenes" src="./IMAGENES/juguetes/camion ('+index+').jpeg" onclick="selectCamiones('+index+')" >';
-
-}
-                    function selectCamiones(img){
-
-                    document.getElementById("imgVer2").innerHTML='<img class="cardimg1" src="./IMAGENES/juguetes/camion ('+img+').jpeg" alt="" >';
-
-                    };
-//AUTO
-for (let index = 0; index < 2; index++) {
-
-document.getElementById("carrucel3").innerHTML+='<img class="imagenes" src="./IMAGENES/juguetes/auto ('+index+').jpeg" onclick="selectAutos('+index+')" >';
-
-}
-
-                    function selectAutos(img){
-
-                    document.getElementById("imgVer3").innerHTML='<img class="cardimg1" src="./IMAGENES/juguetes/auto ('+img+').jpeg" alt="" >';
-
-                    };
-//CUNA
-for (let index = 0; index < 4; index++) {
-
-document.getElementById("carrucel4").innerHTML+='<img class="imagenes" src="./IMAGENES/juguetes/cuna ('+index+').jpeg" onclick="selectCunas('+index+')" >';
-
-}
-
-                    function selectCunas(img){
-
-                    document.getElementById("imgVer4").innerHTML='<img class="cardimg1" src="./IMAGENES/juguetes/cuna ('+img+').jpeg" alt="" >';
-
-                    };
-
-
-
-//CABALLO
-for (let index = 0; index < 2; index++) {
-
-document.getElementById("carrucel5").innerHTML+='<img class="imagenes" src="./IMAGENES/juguetes/caballo ('+index+').jpeg" onclick="selectCaballos('+index+')" >';
-
-}
-
-
-                    function selectCaballos(img){
-
-                    document.getElementById("imgVer5").innerHTML='<img class="cardimg1" src="./IMAGENES/juguetes/caballo ('+img+').jpeg" alt="" >';
-
-                    };
-
-
-//MARTILLO
-for (let index = 0; index < 3; index++) {
-
-document.getElementById("carrucel6").innerHTML+='<img class="imagenes" src="./IMAGENES/juguetes/martillo ('+index+').jpeg" onclick="selectMartillos('+index+')" >';
-
-}
-
-                    function selectMartillos(img){
-
-                    document.getElementById("imgVer6").innerHTML='<img class="cardimg1" src="./IMAGENES/juguetes/martillo ('+img+').jpeg" alt="" >';
-
-                    };
 
 
 </script>

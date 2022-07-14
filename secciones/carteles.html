@@ -1,18 +1,31 @@
                      
 <!--------------------------------------------------------IMAGEN 1 ----------------------------------------------------------------->
 
-<h3 class="title" >Carteles</h3>
+
 
 <div class="row" >
-    
+    <h3 class="title" >Carteles</h3>    
 <div class="all">
         
             
-                <figure id="imgVer">
-                    <img class="cardimg1" src="./IMAGENES/carteles/cartel (0).jpeg"
-                    alt="" >
-                    
-                </figure>
+                
+
+
+                <div class="containerFigure">
+
+                    <div class="btnImg" id="btnPrev" onclick="btnPrev()">
+                        <
+                    </div>
+                    <figure id="imgVer">
+                        <img class="cardimg1" src="./IMAGENES/carteles/cartel (0).jpeg"
+                        alt="" >
+                        
+                    </figure>
+                    <div class="btnImg" id="btnNext" onclick="btnNext()">
+                        >
+                    </div>
+    
+                </div>
                
             
 
@@ -43,11 +56,59 @@
 
 <script src="./logica/logicaCarrucel.js"></script>
 <script>
-for (let index = 0; index < 13; index++) {
+    let max=13
+for (let index = 0; index < max; index++) {
 
-document.getElementById("carrucel").innerHTML+='<img class="imagenes" src="./IMAGENES/carteles/cartel ('+index+').jpeg" onclick="selectCarteles('+index+')" >';
+document.getElementById("carrucel").innerHTML+='<img class="imagenes" id="img'+index+'" src="./IMAGENES/carteles/cartel ('+index+').jpeg" onclick="selectCarteles('+index+')" >';
 
 }
 
+
+
+    
+//BTNIMG casitas!!
+let indext=0;
+
+
+function btnPrev(){
+    if(indext>0){
+        document.getElementById("img"+indext).style.transform = '';
+        indext--;
+        document.getElementById("imgVer").innerHTML='<img class="cardimg1" src="./IMAGENES/carteles/cartel ('+indext+').jpeg" alt="" >';
+        document.getElementById("img"+indext).style.transform = "translate(0,-10px)"
+    }else{
+        
+    }
+    return indext;
+    
+}
+
+                    function btnNext(){
+                        document.getElementById("img"+indext).style.transform = '';
+                        indext++;
+                        if(indext<max){
+                            
+                            document.getElementById("imgVer").innerHTML='<img class="cardimg1" src="./IMAGENES/carteles/cartel ('+indext+').jpeg" alt="" >';
+                            document.getElementById("img"+indext).style.transform = "translate(0,-10px)"
+
+                        }else{
+                            
+                            indext--;
+                            document.getElementById("img"+indext).style.transform = "translate(0,-10px)"
+                        }
+                        return indext;
+                    }
+
+function selectCarteles(img){
+  
+  document.getElementById("img"+indext).style.transform = '';
+
+  document.getElementById("imgVer").innerHTML='<img class="cardimg1" src="./IMAGENES/carteles/cartel ('+img+').jpeg" alt="" >';
+  indext=img;
+  document.getElementById("img"+indext).style.transform = "translate(0,-10px)"
+  return(indext);
+};
+
+        
 
 </script>
