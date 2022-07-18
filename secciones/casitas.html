@@ -2,55 +2,58 @@
 <!--------------------------------------------------------IMAGEN 1 ----------------------------------------------------------------->
 
 <div class="row" >
+
     <h3 class="title" >Casas de Muñecas</h3>
-<div class="all">
-        
-            <div class="containerFigure">
 
+    <div class="all">
             
-                <div class="btnImg" id="btnPrev" onclick="btnPrev()">
-                    <
+                <div class="containerFigure">
+
+                
+                    <div class="btnImg" id="btnPrev" onclick="btnPrev()">
+                        <
+                    </div>
+                    <figure id="imgVer">
+                        <img class="cardimg1" src="./IMAGENES/casitas/casitas (0).jpeg"
+                        alt="" >
+                        
+                    </figure>
+                <div class="btnImg" id="btnNext" onclick="btnNext()">
+                        >
+                    </div>
+
                 </div>
-                <figure id="imgVer">
-                    <img class="cardimg1" src="./IMAGENES/casitas/casitas (0).jpeg"
-                    alt="" >
-                    
-                </figure>
-               <div class="btnImg" id="btnNext" onclick="btnNext()">
-                    >
+
+
+                <div class="text">
+                    <text>
+                        Casita de muñecas en madera completa con 15 muebles artesanales  pintada y personalizada en acrílico  con nombre ..y un acabado a la laca 
+                    </text>
+                    <text>
+                        Precio: 8.000 $
+                    </text>
+
+                    <button class="btnComprar">Comprar</button>
+        
                 </div>
 
-            </div>
 
+    </div>
 
-            <div class="text">
-                <text>
-                    Casita de muñecas en madera completa con 15 muebles artesanales  pintada y personalizada en acrílico  con nombre ..y un acabado a la laca 
-                </text>
-                <text>
-                    Precio: 8.000 $
-                </text>
+    <div class="carrucel" id="carrucel">
 
-                <button class="btnComprar">Comprar</button>
+    </div>
+
     
-            </div>
 
-
-</div>
-
-
-
-<div class="carrucel" id="carrucel">
-
-
-</div>
-<h3 class="title" >Casitas de Muñecas</h3>
+    
+    
 </div>
 
 
 <script src="./logica/logicaCarrucel.js"></script>
 <script>
-let max=35;
+let max=30;
 for (let index = 0; index < max; index++) {
 
 document.getElementById("carrucel").innerHTML+='<img class="imagenes" id="img'+index+'" src="./IMAGENES/casitas/casitas ('+index+').jpeg" onclick="selectCasitas('+index+')" >';
