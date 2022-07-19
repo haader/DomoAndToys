@@ -136,8 +136,27 @@ img{
                         height: 8rem;
                     }
 
-
+/*
                     .carrucel:hover:-webkit-scrollbar {display:contents;}
+*/
+.carrucel::-webkit-scrollbar {
+    width: 3px;               /* width of the entire scrollbar */
+    height: 8px;
+}
+  
+  .carrucel::-webkit-scrollbar-track {
+    background: rgba(23, 23, 34, 0.5);    /* color of the tracking area */
+    border-radius: 10px;          
+  }
+  
+  .carrucel::-webkit-scrollbar-thumb {
+    background-color: rgba(23, 23, 34, 0.8);    /* color of the scroll thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */
+    border: 2px solid rgba(13, 13, 17, 0.966);   /* creates padding around scroll thumb */
+  }
+
+
+
 
 
 .imagenes{
