@@ -1,5 +1,23 @@
 /* css general para todos las páginas?*/
 
+/*ESTILOS GENERALES PARA INCIO SIN IMPORTAR EL TAMAÑO DE PANTALLA*/
+.rowInicio .divcard1 p {
+    display: flex;
+    color: black;
+    font-family: 'Rampart One', cursive;
+}
+
+.rowInicio
+    .divcard1
+    figure:hover{
+        border: 1px solid darkmagenta;
+        }
+
+        .rowInicio .divcard1 figure:hover p{
+            color: red;
+        }
+
+
 @media screen and (min-width:500px)  {
 
 
@@ -9,15 +27,16 @@
     }
 
 
-    .row{
+    .rowInicio{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 3rem;
+        margin-top: 6rem;
         justify-content: center;
         align-items: flex-end
     }
-    .row
+    .rowInicio
     .divcard1{
     display: flex;
     flex-direction: column;
@@ -30,7 +49,7 @@
 
 
     }
-    .row
+    .rowInicio
     .divcard1
     figure{
         border: 0.5px solid black;
@@ -46,7 +65,7 @@
         border-radius: 15px;
         box-shadow: -20px 30px 20px rgb(20 14 5 / 50%);
     }
-    .row
+    .rowInicio
     .divcard1
     figure
     img{
@@ -55,7 +74,7 @@
         position: relative;
 
     }
-    .row
+    .rowInicio
     .divcard1
     p{
         width: 175%;
@@ -68,7 +87,7 @@
         align-items: center;
         margin: 0;
     }
-    .row
+    .rowInicio
     .divcard1
     a{
         width: var(--x);
@@ -115,15 +134,16 @@
         }
 
 
-        .row{
+        .rowInicio{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             gap: 3rem;
+            margin-top: 6rem;
             justify-content: center;
             align-items: flex-end
         }
-        .row
+        .rowInicio
         .divcard1{
         display: flex;
         flex-direction: column;
@@ -136,7 +156,7 @@
 
 
         }
-        .row
+        .rowInicio
         .divcard1
         figure{
             border: 0.5px solid black;
@@ -152,7 +172,11 @@
             border-radius: 15px;
             box-shadow: -20px 30px 20px rgb(20 14 5 / 50%);
         }
-        .row
+
+
+        
+
+        .rowInicio
         .divcard1
         figure
         img{
@@ -161,7 +185,7 @@
             position: relative;
 
         }
-        .row
+        .rowInicio
         .divcard1
         p{
             width: 175%;
@@ -174,7 +198,7 @@
             align-items: center;
             margin: 0;
         }
-        .row
+        .rowInicio
         .divcard1
         a{
             width: var(--x);
