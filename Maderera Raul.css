@@ -13,13 +13,13 @@ overflow: hidden;
 
 
 /*-------cards-----------------*/
-
+/*
 .divcard1, .divcard2, .divcard3{
 width: 33%;
 padding-left: 4rem;
 margin-top: 2.5rem;
 }
-
+*/
 .divbuttom, .btn{
     width: 90%;
 
@@ -110,7 +110,7 @@ margin-top: 2.5rem;
      
     }
 
-
+/*
     .divcard1, .divcard2, .divcard3{
         width: 100%;
         padding-left: 3rem;
@@ -118,7 +118,7 @@ margin-top: 2.5rem;
         display: block;
         margin-bottom: 2rem;
         }
-
+*/
         .card-text{
             text-align: center;
             padding-right: 2rem;
