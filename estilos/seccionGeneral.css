@@ -131,7 +131,7 @@ img{
                         overflow-x: scroll;
                         align-items: center;
                         
-                        width: 80%;
+                        width: 95%;
                         height: 8rem;
                     }
 
@@ -152,6 +152,7 @@ img{
 }
 
 @media screen and (max-width:550px) {
+
     .itemSeccion
 .title{
         font-size: 2rem;

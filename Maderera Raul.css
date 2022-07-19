@@ -104,6 +104,12 @@ margin-top: 2.5rem;
 
 @media screen and (max-width: 415px){
 
+    .itemSeccion {
+     
+        margin-top: 8rem;
+     
+    }
+
 
     .divcard1, .divcard2, .divcard3{
         width: 100%;
