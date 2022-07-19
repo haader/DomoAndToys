@@ -14,7 +14,7 @@ if (clic==1){
     document.getElementById("contenedor").style.top="3rem";
 
     
-    clic = clic + 1;
+    clic++;
 }else{
 
     document.getElementById("iconmenu").style.color="white";
