@@ -32,7 +32,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
+    flex-wrap: wrap;
     gap: 2rem;
     align-items: stretch
     
@@ -149,5 +149,34 @@ img{
 
 .imagenes:hover{
     transform: translateY(-10px);
+}
+
+@media screen and (max-width:550px) {
+    .itemSeccion
+.title{
+        font-size: 2rem;
+    }
+    .all .text{
+        width: 90%;
+        height: auto;
+    }
+
+    .all
+    .containerFigure{
+        width: 90%;
+        height: auto;
+    }
+
+.containerFigure .btnImg
+{
+    width: 10%;
+    height: auto;
+    font-size: 3rem;
+}
+.containerFigure  .imgVer {
+
+    width: 80%;
+    height: auto;
+        }
 }
 
