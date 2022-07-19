@@ -6,7 +6,7 @@ myLista.forEach((element,index)=>{
 
     <div class="divcard1 ">
     
-        <figure >
+        <figure class="imgVer">
             <img class="cardimg1" id="imgdiv2" src="./IMAGENES/inicio/inicio (${myLista[index].id}).jpeg" alt="" >
         </figure>
 

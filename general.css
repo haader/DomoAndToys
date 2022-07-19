@@ -1,20 +1,26 @@
 /* css general para todos las páginas?*/
 
 /*ESTILOS GENERALES PARA INCIO SIN IMPORTAR EL TAMAÑO DE PANTALLA*/
+body{
+    background-size: 500px;
+    background: url(./IMAGENES/background.jpg),repeat-x,rgba(0, 0, 0, 1);
+}
+
 .rowInicio .divcard1 p {
     display: flex;
     color: black;
     font-family: 'Rampart One', cursive;
 }
 
+
 .rowInicio
     .divcard1
-    figure:hover{
-        border: 1px solid darkmagenta;
+    .imgVer:hover{
+        border: 1px solid chocolate;
         }
 
-        .rowInicio .divcard1 figure:hover p{
-            color: red;
+        .rowInicio .divcard1 .imgVer:hover ~ p{
+            color: chocolate;
         }
 
 
@@ -51,7 +57,7 @@
     }
     .rowInicio
     .divcard1
-    figure{
+    .imgVer{
         border: 0.5px solid black;
         display: flex;
         height: var(--y);
@@ -67,7 +73,7 @@
     }
     .rowInicio
     .divcard1
-    figure
+    .imgVer
     img{
         height: var(--y);
         width: var(--x);
@@ -158,7 +164,7 @@
         }
         .rowInicio
         .divcard1
-        figure{
+        .imgVer{
             border: 0.5px solid black;
             display: flex;
             height: var(--y);
@@ -178,7 +184,7 @@
 
         .rowInicio
         .divcard1
-        figure
+        .imgVer
         img{
             height: var(--y);
             width: var(--x);
@@ -212,9 +218,9 @@
 /*
 
 <div class="divcard1 ">
-    <figure >
+    <.imgVer >
         <img class="cardimg1" id="imgdiv2" src="./IMAGENES/inicio/inicio ('+element+').jpeg" alt="" >
-    </figure>
+    </.imgVer>
     <p class="card-text ">'+texto[0]+'</p>
     
     <div class="divbuttom" >
