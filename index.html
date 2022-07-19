@@ -199,29 +199,10 @@
 
 
 
+<script id="script" src="./logica/inicio.js"></script>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-            <script src="./jquery.js">
-            </script>
             <script>
                 //INICIO
                 
@@ -230,98 +211,50 @@
                 var linkInicio="nany";
 
 
+
+                
+                    traerHtml("inicio","contenedor","secciones/inicio.html");
+                
+
+/*
                 $(document).ready(function(){
     
                     $('#contenedor').load("./secciones/inicio.html");
 
                 });
-                
+  */              
 
                 
-                $(document).ready(function(){
 
-                $('#inicio').click(function(){
-                    
-                    $('#contenedor').load("./secciones/inicio.html");
+                function traerHtml(btn,contenedor,archivo){
 
-                });
-                });
+                                let button=document.getElementById(btn);
+                                let divContenedor=document.getElementById(contenedor);
+                                    button.addEventListener("click",obtenerHTML, true);
+
+                                    function obtenerHTML(e){
+
+                                      
+                                        var xmlhttp = new XMLHttpRequest();
+                                        xmlhttp.onreadystatechange = function() {
+                                            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                                                divContenedor.innerHTML = xmlhttp.responseText;
+                                            }
+                                        }
+                                        xmlhttp.open("GET", archivo, true);
+                                        xmlhttp.send();
+
+                                        console.log("Cargando: "+archivo);
+                                        alert(btn+" "+contenedor+" "+archivo)
+                                        
+                                        
+                                        CargarInicio();
+
+                                    }
+
+                            
+                    };
                 
-                $(document).ready(function(){
-
-                $('#casitas').click(function(){
-                    
-                    $('#contenedor').load("./secciones/casitas.html");
-
-                });
-                });
-
-
-                $(document).ready(function(){
-
-                $('#pistas').click(function(){
-                    
-                    $('#contenedor').load("./secciones/pistas.html");
-
-                });
-                });
-
-
-                $(document).ready(function(){
-
-                $('#carteles').click(function(){
-                    
-                    $('#contenedor').load("./secciones/carteles.html");
-
-                });
-                });
-
-                $(document).ready(function(){
-
-                $('#juguetes').click(function(){
-                    
-                    $('#contenedor').load("./secciones/juguetes.html");
-
-                });
-                });
-
-                
-                $(document).ready(function(){
-
-                $('#domos').click(function(){
-                    
-                    $('#contenedor').load("./secciones/domos.html");
-
-                });
-                });
-
-                $(document).ready(function(){
-
-                $('#mas').click(function(){
-                    
-                    $('#contenedor').load("./secciones/mas.html");
-
-                });
-                });
-
-                $(document).ready(function(){
-
-                $('#howbuy').click(function(){
-                    
-                    $('#contenedor').load("./secciones/howbuy.html");
-
-                });
-                });
-
-                $(document).ready(function(){
-
-                $('#about').click(function(){
-                    
-                    $('#contenedor').load("./secciones/about.html");
-
-                });
-                });
-
    
             </script>
 
