@@ -1,8 +1,11 @@
-function CargarInicio(){
+
+    
+function inicio(){
 
 
     myLista.forEach((element,index)=>{
 
+       
         document.getElementById("ContainerInicio").innerHTML+=`
         
     
@@ -19,13 +22,12 @@ function CargarInicio(){
         </div>
     
         `;
-        console.log("cargand desde otro html");
-        console.log("cargando inicio "+element);
+     
     });
 
 
-};
 
+}
 
 //icono de carrito
 /*<span class="icon-cart"></span> */

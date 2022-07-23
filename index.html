@@ -42,6 +42,9 @@
     <!--RESPONSIVE-->
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
     
+    <!--LOADING SCRIPT-->
+    <script type="text/javascript" id="loadscript"></script>
+    <script type="text/javascript" id="loadscript2"></script>
     
 </head>
 
@@ -188,32 +191,76 @@
         </div>
 
         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
-<script src="./Maderera Raul.js">
-            
-            </script>   
-        
-
-
-
-
-
-
+<script src="./Maderera Raul.js"></script>   
 <script id="script" src="./logica/inicio.js"></script>
-
-
+<script id="script" src="./logica/logicaCarrucel.js"></script>
 
             <script>
                 //INICIO
                 
-                const Lista='[{"articulo":"Pista de Autito","id":1},{"articulo":"Caballo Mecedor","id":2},{"articulo":"Cocina de madera","id":3},{"articulo":"Autitos Artesanales","id":4},{"articulo":"Cuna de Juguete","id":5},{"articulo":"Camiones Artesanal","id":6},{"articulo":"Carteles","id":7},{"articulo":"Casa de muñecas","id":8},{"articulo":"Bodega de vino","id":9},{"articulo":"Domo Geodesicos","id":10}]';
+             
+                let Lista='[{"articulo":"Pista de Autito","id":1},{"articulo":"Caballo Mecedor","id":2},{"articulo":"Cocina de madera","id":3},{"articulo":"Autitos Artesanales","id":4},{"articulo":"Cuna de Juguete","id":5},{"articulo":"Camiones Artesanal","id":6},{"articulo":"Carteles","id":7},{"articulo":"Casa de muñecas","id":8},{"articulo":"Bodega de vino","id":9},{"articulo":"Domo Geodesicos","id":10}]';
                 let myLista=JSON.parse(Lista);
-                var linkInicio="nany";
+                let linkInicio="nany";
+                var max;
+                var carpeta="";
+                var file="";
 
+                var indext=0;
+
+
+
+//cargamos el inicio        
+       
+                var xmlhttp1 = new XMLHttpRequest();
+                xmlhttp1.onreadystatechange = function() {
+                    if (xmlhttp1.readyState == 4 && xmlhttp1.status == 200) {
+                        document.getElementById("contenedor").innerHTML = xmlhttp1.responseText;
+                        
+                    }
+                }
+                xmlhttp1.open("GET", "secciones/inicio.html", false);
+                xmlhttp1.send();
+                //Ejecutar();
+                inicio();
+                
+            
+      
 
 
                 
-                    traerHtml("inicio","contenedor","secciones/inicio.html");
+                    traerHtml("inicio","secciones/inicio.html");
+                    traerHtml("casitas","secciones/casitas.html");
+                    traerHtml("pistas","secciones/pistas.html");
+                    traerHtml("carteles","secciones/carteles.html");
+                    traerHtml("juguetes","secciones/juguetes.html");
+                    traerHtml("domos","secciones/domos.html");
+                    traerHtml("mas","secciones/mas.html");
+                    traerHtml("howbuy","secciones/howbuy.html");
+                    traerHtml("about","secciones/about.html");
+
                 
 
 /*
@@ -226,10 +273,11 @@
 
                 
 
-                function traerHtml(btn,contenedor,archivo){
+                function traerHtml(btn,archivo){
 
                                 let button=document.getElementById(btn);
-                                let divContenedor=document.getElementById(contenedor);
+                                let contenedor=document.getElementById("contenedor");
+                                
                                     button.addEventListener("click",obtenerHTML, true);
 
                                     function obtenerHTML(e){
@@ -238,28 +286,82 @@
                                         var xmlhttp = new XMLHttpRequest();
                                         xmlhttp.onreadystatechange = function() {
                                             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                                                divContenedor.innerHTML = xmlhttp.responseText;
+                                                contenedor.innerHTML='';
+                                                contenedor.innerHTML = xmlhttp.responseText;
+                                                
+                                                
+                                                
                                             }
                                         }
-                                        xmlhttp.open("GET", archivo, true);
+                                        xmlhttp.open("GET", archivo, false);
                                         xmlhttp.send();
+                                        
+                                       
 
-                                        console.log("Cargando: "+archivo);
-                                        alert(btn+" "+contenedor+" "+archivo)
+                                     switch (btn) {
+                                        case "inicio":
+                                            console.log("se eligio inicio");
+                                            
+                                            inicio();
+                                            break;
+                                     
+                                            case "casitas":
+                                            console.log("se eligio casitas");
+                                            
+                                             max=30;
+                                             carpeta="casitas";
+                                             file="casitas";
+                                             CargarCarrucel();
+                                            break;
+
+                                            case "pistas":
+                                            console.log("se eligio pistas");
+                                            carpeta="pistas";
+                                             file="pista";
+                                            max=25;
+                                             CargarCarrucel();
+                                            break;
+
+                                            case "carteles":
+                                            console.log("se eligio carteles");
+                                            carpeta="carteles";
+                                             file="cartel";
+                                             max=13;
+                                             CargarCarrucel();
+                                            break;
+
+                                            case "juguetes":
+                                            console.log("se eligio juguetes");
+                                            carpeta="casitas";
+                                            file="casitas";
+                                            
+                                            break;
+
+                                            case "domos":
+                                            console.log("se eligio domos");
+                                            carpeta="domos";
+                                             file="domo";
+                                             max=16;
+                                             CargarCarrucel();
+                                            break;
+
+                                        default:
+                                            break;
+                                     }
                                         
                                         
-                                        CargarInicio();
-
+                                        
                                     }
+                                    
 
                             
                     };
                 
    
             </script>
-
+           
             
-        
+ 
 
 
 
@@ -267,4 +369,3 @@
     </div>
 
 </body>
-

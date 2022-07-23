@@ -1,6 +1,8 @@
 
 
-
+function Ejecutar(){
+alert("ssss")
+};
 //COCINAS
 let max1=7;
 let index1=0;
