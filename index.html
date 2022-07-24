@@ -218,10 +218,19 @@
 <script id="script" src="./logica/logicaCarrucel.js"></script>
 
             <script>
-                //INICIO
+                //VARIABLES GLOBALES
                 
              
-                let Lista='[{"articulo":"Pista de Autito","id":1},{"articulo":"Caballo Mecedor","id":2},{"articulo":"Cocina de madera","id":3},{"articulo":"Autitos Artesanales","id":4},{"articulo":"Cuna de Juguete","id":5},{"articulo":"Camiones Artesanal","id":6},{"articulo":"Carteles","id":7},{"articulo":"Casa de muñecas","id":8},{"articulo":"Bodega de vino","id":9},{"articulo":"Domo Geodesicos","id":10}]';
+                let Lista=`[{"articulo":"Pista de Autito","id":1,"seccion":"pistas"},
+                            {"articulo":"Caballo Mecedor","id":2,"seccion":"juguetes"},
+                            {"articulo":"Cocina de madera","id":3,"seccion":"cocinas"},
+                            {"articulo":"Autitos Artesanales","id":4,"seccion":"juguetes"},
+                            {"articulo":"Cuna de Juguete","id":5,"seccion":"juguetes"},
+                            {"articulo":"Camiones Artesanal","id":6,"seccion":"juguetes"},
+                            {"articulo":"Carteles","id":7,"seccion":"carteles"},
+                            {"articulo":"Casa de muñecas","id":8,"seccion":"casitas"},
+                            {"articulo":"Bodega de vino","id":9,"seccion":"nany"},
+                            {"articulo":"Domo Geodesicos","id":10,"seccion":"domos"}]`;
                 let myLista=JSON.parse(Lista);
                 let linkInicio="nany";
                 var max;

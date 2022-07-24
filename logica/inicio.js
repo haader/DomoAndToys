@@ -17,7 +17,7 @@ function inicio(){
     
                 <p class="card-text">${myLista[index].articulo}</p> 
     
-                <a href="${linkInicio}" class="btn btn-primary bg-gradient"> Ver</a>
+                <button onclick="traerHtml("${myLista[index].seccion}","secciones/${myLista[index].seccion}.html")" class="btn btn-primary bg-gradient"> Ver</button>
     
         </div>
     
