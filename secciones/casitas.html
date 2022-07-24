@@ -1,6 +1,10 @@
                  
 <!--------------------------------------------------------IMAGEN 1 ----------------------------------------------------------------->
 
+
+<div class="btnBack" id="btnBack" onclick="clickBack()">
+    <ion-icon name="arrow-back-circle-outline"></ion-icon>
+</div>
 <div class="itemSeccion" >
 
     <h3 class="title" >Casas de Muñecas</h3>
@@ -47,71 +51,4 @@
 
     
 </div>
-
-
-   <!--
-
-   
-<script src="./logica/logicaCarrucel.js"></script>
-<script>
-    function Ejecutar(){
-        alert("retro")
-    }
-let max=30;
-for (let index = 0; index < max; index++) {
-
-document.getElementById("carrucel").innerHTML+='<img class="imagenes" id="img'+index+'" src="./IMAGENES/casitas/casitas ('+index+').jpeg" onclick="selectCasitas('+index+')" >';
-
-}
-
-
-
-
-//BTNIMG casitas!!
-let indext=0;
-
-
-function btnPrev(){
-    if(indext>0){
-        document.getElementById("img"+indext).style.transform = '';
-        indext--;
-        document.getElementById("imgVer").innerHTML='<img class="cardimg1" src="./IMAGENES/casitas/casitas ('+indext+').jpeg" alt="" >';
-        document.getElementById("img"+indext).style.transform = "translate(0,-10px)"
-    }else{
-        
-    }
-    return indext;
-    
-}
-
-                    function btnNext(){
-                        document.getElementById("img"+indext).style.transform = '';
-                        indext++;
-                        if(indext<max){
-                            
-                            document.getElementById("imgVer").innerHTML='<img class="cardimg1" src="./IMAGENES/casitas/casitas ('+indext+').jpeg" alt="" >';
-                            document.getElementById("img"+indext).style.transform = "translate(0,-10px)"
-
-                        }else{
-                            
-                            indext--;
-                            document.getElementById("img"+indext).style.transform = "translate(0,-10px)"
-                        }
-                        return indext;
-                    }
-
-function selectCasitas(img){
-  
-  document.getElementById("img"+indext).style.transform = '';
-
-  document.getElementById("imgVer").innerHTML='<img class="cardimg1" src="./IMAGENES/casitas/casitas ('+img+').jpeg" alt="" >';
-  indext=img;
-  document.getElementById("img"+indext).style.transform = "translate(0,-10px)"
-  return(indext);
-};
-
-</script>
--->
-
-
 

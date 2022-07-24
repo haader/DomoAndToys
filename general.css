@@ -23,7 +23,22 @@ body{
             color: chocolate;
         }
 
+.btnBack{
+    display: flex;
+    position: fixed;
+    left: 0%;
+    bottom: 0rem;
+    height:3rem;
+    width: 3rem;
+    font-size: 3rem;
+    z-index: 1;
+    color: white;
 
+}
+
+.btnBack:hover{
+    color: teal;
+}
 
 
 
