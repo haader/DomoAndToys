@@ -5,8 +5,8 @@ function inicio(){
 
     myLista.forEach((element,index)=>{
 
-       
-        document.getElementById("ContainerInicio").innerHTML+=`
+        let url="secciones/"+myLista[index].seccion+".html"
+       document.getElementById("ContainerInicio").innerHTML+=`
         
     
         <div class="divcard1 ">
@@ -17,7 +17,7 @@ function inicio(){
     
                 <p class="card-text">${myLista[index].articulo}</p> 
     
-                <button onclick="traerHtml("${myLista[index].seccion}","secciones/${myLista[index].seccion}.html")" class="btn btn-primary bg-gradient"> Ver</button>
+                <button onclick='irSeccion("${myLista[index].seccion}","${url}")' class="btn btn-primary bg-gradient"> <ion-icon name="eye-outline"></ion-icon> Ver</button>
     
         </div>
     

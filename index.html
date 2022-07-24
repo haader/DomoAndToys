@@ -292,11 +292,22 @@
                                     function obtenerHTML(e){
 
                                       
-                                        var xmlhttp = new XMLHttpRequest();
+                                        irSeccion(btn,archivo);
+                                        
+                                        
+                                    }
+                                    
+
+                            
+                    };
+                
+                    function irSeccion(btn,archivo,itemJ){
+
+                        var xmlhttp = new XMLHttpRequest();
                                         xmlhttp.onreadystatechange = function() {
                                             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                                                contenedor.innerHTML='';
-                                                contenedor.innerHTML = xmlhttp.responseText;
+                                                document.getElementById("contenedor").innerHTML='';
+                                                document.getElementById("contenedor").innerHTML = xmlhttp.responseText;
                                                 
                                                 
                                                 
@@ -341,8 +352,8 @@
 
                                             case "juguetes":
                                             console.log("se eligio juguetes");
-                                            carpeta="casitas";
-                                            file="casitas";
+                                            carpeta="juguetes";
+                                            file="juguete";
                                             
                                             break;
 
@@ -357,16 +368,9 @@
                                         default:
                                             break;
                                      }
-                                        
-                                        
-                                        
-                                    }
-                                    
+                                     
 
-                            
                     };
-                
-   
             </script>
            
             
@@ -376,5 +380,6 @@
 
 
     </div>
-
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
