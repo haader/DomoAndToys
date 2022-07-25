@@ -39,6 +39,8 @@
     
 }
 
+
+
                             .containerFigure
                             {
                                 display: flex;
@@ -97,7 +99,7 @@ img{
     border: 1px solid black;
 
     width: 390px;
-    height: 318px;
+    
 
 }
 .text h4{
@@ -122,8 +124,21 @@ img{
 .btnComprar:hover{
     color: chocolate;
 }
+.itemSeccion
+.all
+.visor{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
 
 
+    
+    
+}
+                    .itemSeccion
+                    .all
+                    .visor
                     .carrucel{
                         position: relative;
                         display: flex;
@@ -132,8 +147,9 @@ img{
                         overflow-x: scroll;
                         align-items: center;
                         
-                        width: 95%;
+                        max-width: 25rem;
                         height: 8rem;
+                        
                     }
 
 /*
