@@ -7,9 +7,13 @@ body{
 }
 
 .rowInicio .divcard1 p {
+    
     display: flex;
     color: black;
     font-family: 'Rampart One', cursive;
+    background: brown;
+    background-clip: red;
+    -webkit-background-clip:text;
 }
 
 

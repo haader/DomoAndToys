@@ -1,0 +1,5 @@
+CAMBIOS A REALIZAR:
+
+
+1. crear logica de sección juguetes
+2.cambiar la logica del btn "menu"
