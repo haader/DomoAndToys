@@ -9,7 +9,7 @@ function inicio(){
        document.getElementById("ContainerInicio").innerHTML+=`
         
     
-        <div class="divcard1 ">
+        <div class="divcard1" onclick='irSeccion("${myLista[index].seccion}","${url}")' >
         
             <figure class="imgVer">
                 <img class="cardimg1" id="imgdiv2" src="./IMAGENES/inicio/inicio (${myLista[index].id}).jpeg" alt="" >
@@ -17,12 +17,10 @@ function inicio(){
     
                 <p class="card-text">${myLista[index].articulo}</p> 
     
-                <button onclick='irSeccion("${myLista[index].seccion}","${url}")' class="btn btn-primary bg-gradient"> <ion-icon name="eye-outline"></ion-icon> Ver</button>
-    
         </div>
     
         `;
-     
+     //<ion-icon name="eye-outline"></ion-icon>
     });
 
 
