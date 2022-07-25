@@ -37,21 +37,29 @@ return indext;
 
 }
 
-                function btnNext(){
-                    document.getElementById("img"+indext).style.transform = '';
-                    indext++;
-                    if(indext<max){
-                        
-                        document.getElementById("imgVer").innerHTML=`<img class="cardimg1" src="./IMAGENES/${carpeta}/${file} (${indext}).jpeg" alt="" >`;
-                        document.getElementById("img"+indext).style.transform = "translate(0,-10px)"
 
-                    }else{
-                        
-                        indext--;
-                        document.getElementById("img"+indext).style.transform = "translate(0,-10px)"
-                    }
-                    return indext;
-                }
+
+
+
+function btnNext(){
+    document.getElementById("img"+indext).style.transform = '';
+    indext++;
+    if(indext<max){
+        
+        document.getElementById("imgVer").innerHTML=`<img class="cardimg1" src="./IMAGENES/${carpeta}/${file} (${indext}).jpeg" alt="" >`;
+        document.getElementById("img"+indext).style.transform = "translate(0,-10px)"
+
+    }else{
+        
+        indext--;
+        document.getElementById("img"+indext).style.transform = "translate(0,-10px)"
+    }
+    return indext;
+}
+
+
+
+
 
 function selectimg(img){
 

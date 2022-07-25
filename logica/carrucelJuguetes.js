@@ -72,7 +72,7 @@ myJuguetes.forEach((element,index) => {
     
                 <div class="containerFigure">
     
-                    <div class="btnImg" id="btnPrev" onclick="btnPrev(${index})">
+                    <div class="btnImg" id="btnPrev" onclick="btnPrevJ(${index})">
                         <
                     </div>
                     <figure class="imgVer"  id="imgVer${index}">
@@ -80,7 +80,7 @@ myJuguetes.forEach((element,index) => {
                         alt="" >
                         
                     </figure>
-                    <div class="btnImg" id="btnNext" onclick="btnNext(${index})">
+                    <div class="btnImg" id="btnNext" onclick="btnNextJ(${index})">
                         >
                     </div>
     
@@ -120,7 +120,7 @@ myJuguetes.forEach((element,index) => {
     
     for (let i = 0; i < myJuguetes[index].max; i++) {
 
-        document.getElementById("carrucel("+index+")").innerHTML+=`<img class="imagenes" id="img${index}(${i})" src="${myJuguetes[index].ruta} (${i}).jpeg" onclick="select(${index},${i})" >`;
+        document.getElementById("carrucel("+index+")").innerHTML+=`<img class="imagenes" id="img${index}(${i})" src="${myJuguetes[index].ruta} (${i}).jpeg" onclick="selectJ(${index},${i})" >`;
         
         }
 
@@ -137,7 +137,7 @@ myJuguetes.forEach((element,index) => {
     
 //cuando seleccionamos una imagen del carrucel
 
-function select(id,img){
+function selectJ(id,img){
     
     
     document.getElementById("img"+id+"("+imgSelect[id]+")").style.transform = '';
@@ -154,7 +154,7 @@ function select(id,img){
                         
 
 
-                        function btnPrev(id){
+                        function btnPrevJ(id){
                             document.getElementById("img"+id+"("+imgSelect[id]+")").style.transform = '';
                             imgSelect[id]--;
                             if((imgSelect[id])>=0){
@@ -173,7 +173,7 @@ function select(id,img){
                             
                         }
                         
-                        function btnNext(id){
+                        function btnNextJ(id){
                             
                             document.getElementById("img"+id+"("+imgSelect[id]+")").style.transform = '';
                             imgSelect[id]++;
