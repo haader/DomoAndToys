@@ -120,6 +120,7 @@ img{
     border-radius: 10px;
     color: wheat;
     width: 10rem;
+    margin-bottom: 1rem;
 }
 .btnComprar:hover{
     color: chocolate;

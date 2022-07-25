@@ -12,6 +12,7 @@ if (clic==1){
     document.getElementById("header").style.height="3rem";
     document.getElementById("maderanav").style.height="3rem";
     document.getElementById("contenedor").style.top="3rem";
+    document.getElementById("itemSeccion").style.marginTop="4rem";
 
     
     clic++;
@@ -23,6 +24,7 @@ if (clic==1){
     document.getElementById("header").style.height="7rem";
     document.getElementById("maderanav").style.height="7rem";
     document.getElementById("contenedor").style.top="8rem";
+    document.getElementById("itemSeccion").style.marginTop="8rem";
 
     
     clic = 1;
