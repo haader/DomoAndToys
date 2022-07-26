@@ -223,16 +223,71 @@
                 //VARIABLES GLOBALES
                 
              
-                let Lista=`[{"articulo":"Pista de Autito","id":1,"seccion":"pistas"},
-                            {"articulo":"Caballo Mecedor","id":2,"seccion":"juguetes"},
-                            {"articulo":"Cocina de madera","id":3,"seccion":"cocinas"},
-                            {"articulo":"Autitos Artesanales","id":4,"seccion":"juguetes"},
-                            {"articulo":"Cuna de Juguete","id":5,"seccion":"juguetes"},
-                            {"articulo":"Camiones Artesanal","id":6,"seccion":"juguetes"},
-                            {"articulo":"Carteles","id":7,"seccion":"carteles"},
-                            {"articulo":"Casa de muñecas","id":8,"seccion":"casitas"},
-                            {"articulo":"Bodega de vino","id":9,"seccion":"nany"},
-                            {"articulo":"Domo Geodesicos","id":10,"seccion":"domos"}]`;
+                let Lista=
+                        `[
+                            {
+                                "articulo":"Domo Geodesicos",
+                                "id":0,
+                                "seccion":"domos",
+                                "name":"domos"
+                            },
+                            {
+                                "articulo":"Pista de Autito",
+                                "id":1,
+                                "seccion":"pistas",
+                                "name":"pistas"
+                            },
+                            {
+                                "articulo":"Casa de muñecas",
+                                "id":2,
+                                "seccion":"casitas",
+                                "name":"casitas"
+                            },
+                            {
+                                "articulo":"Carteles",
+                                "id":3,
+                                "seccion":"carteles",
+                                "name":"carteles"
+                            },
+                            {
+                                "articulo":"Cocina de madera",
+                                "id":4,
+                                "seccion":"juguetes",
+                                "name":"cocinas"
+                            },
+                            {
+                                "articulo":"Caballo Mecedor",
+                                "id":5,
+                                "seccion":"juguetes",
+                                "name":"caballos"
+                            },
+                            {
+                                "articulo":"Autitos Artesanales",
+                                "id":6,
+                                "seccion":"juguetes",
+                                "name":"autos"
+                            },
+                            {
+                                "articulo":"Cuna de Juguete",
+                                "id":7,
+                                "seccion":"juguetes",
+                                "name":"cunas"
+                            },
+                            {
+                                "articulo":"Camiones Artesanal",
+                                "id":8,
+                                "seccion":"juguetes",
+                                "name":"camiones"
+                            },
+                            {
+                                "articulo":"Bodega de vino",
+                                "id":9,
+                                "seccion":"otros",
+                                "name":"vinos"
+                            }
+                            
+                        
+                        ]`;
                 let myLista=JSON.parse(Lista);
                 let linkInicio="nany";
                 var max;
@@ -357,8 +412,55 @@
                                             carpeta="juguetes";
                                             file="juguete";
                                             CargarJuguetes();
-                                            
                                             break;
+
+                                                        case "cocinas":
+                                                        console.log("se eligio juguetes");
+                                                        carpeta="juguetes";
+                                                        file="juguete";
+                                                        CargarJuguetes();
+                                                        moverA(btn);
+                                                        break;
+                                                        
+                                                        case "camiones":
+                                                        console.log("se eligio juguetes");
+                                                        carpeta="juguetes";
+                                                        file="juguete";
+                                                        CargarJuguetes();
+                                                        moverA(btn);
+                                                        break;
+
+                                                        case "autos":
+                                                        console.log("se eligio juguetes");
+                                                        carpeta="juguetes";
+                                                        file="juguete";
+                                                        CargarJuguetes();
+                                                        moverA(btn);
+                                                        break;
+                                                        
+                                                        case "cunas":
+                                                        console.log("se eligio juguetes");
+                                                        carpeta="juguetes";
+                                                        file="juguete";
+                                                        CargarJuguetes();
+                                                        moverA(btn);
+                                                        break;
+
+                                                        case "caballos":
+                                                        console.log("se eligio juguetes");
+                                                        carpeta="juguetes";
+                                                        file="juguete";
+                                                        CargarJuguetes();
+                                                        moverA(btn);
+                                                        break;
+                                                        
+                                                        case "martillos":
+                                                        console.log("se eligio juguetes");
+                                                        carpeta="juguetes";
+                                                        file="juguete";
+                                                        CargarJuguetes();
+                                                        moverA(btn);
+                                                        break;
 
                                             case "domos":
                                             console.log("se eligio domos");
@@ -378,6 +480,22 @@
                     function clickBack (){
                         
                         irSeccion("inicio","secciones/inicio.html")
+                    }
+
+                    function moverA(id){
+                        let idd=""+id;
+                        
+                        
+                            //location.href='#'+id;
+                            let moveTo=document.getElementById(idd);
+                            console.log(id)
+                            console.log(moveTo)
+                            moveTo.scrollIntoView({behavior: 'smooth'},true);
+                            
+                        
+                        
+                        
+                            
                     }
                         
                     

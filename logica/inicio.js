@@ -9,10 +9,10 @@ function inicio(){
        document.getElementById("ContainerInicio").innerHTML+=`
         
     
-        <div class="divcard1" onclick='irSeccion("${myLista[index].seccion}","${url}")' >
+        <div class="divcard1" onclick='irSeccion("${myLista[index].name}","${url}")' >
         
             <figure class="imgVer">
-                <img class="cardimg1" id="imgdiv2" src="./IMAGENES/inicio/inicio (${myLista[index].id}).jpeg" alt="" >
+                <img class="cardimg1" id="imgdiv2" src="./IMAGENES/inicio/${myLista[index].name}.jpeg" alt="" >
             </figure>
     
                 <p class="card-text">${myLista[index].articulo}</p> 
